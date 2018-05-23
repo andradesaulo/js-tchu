@@ -7,12 +7,15 @@ function calcula() {
 
     media = (nota1 + nota2 + nota3 + nota4)/4
 
-    if (media >= 7) {
-        document.getElementById("resposta").innerHTML = "Aluno aprovado"
+    if ((nota1 < 0) || (nota2 < 0) || (nota3 < 0) || (nota4 < 0)) {
+        document.getElementById("resposta").innerHTML = "Notas inválidas";
     }
-    else {
-        document.getElementById("resposta").innerHTML = "Aluno reprovado"
-    }
+        else if (media >= 7) {
+        document.getElementById("resposta").innerHTML = "Aluno aprovado";
+        }
+            else {
+        document.getElementById("resposta").innerHTML = "Aluno reprovado";
+        }
 }
 
-document.getElementById("botao").addEventListener('click', calcula, false);
+document.getElementById("botao").addEventListener('click', calcula);
