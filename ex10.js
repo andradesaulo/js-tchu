@@ -6,14 +6,14 @@ function calcula() {
 	
 		if (f <= 12000) {
 			n = (f + (f*0.05));
-			document.getElementById("n").textContent = n + ",00 é preço ao consumidor.";
+			document.getElementById("n").textContent = n + " é preço ao consumidor.";
 			}
 			else if (( f >= 12000) && (f <=25000)) {
 				n = (f + (f*0.1) + (f*0.15));
-				document.getElementById("n").textContent = n + ",00 é preço ao consumidor."; 
+				document.getElementById("n").textContent = n + ", é preço ao consumidor."; 
 				}
 				else if (f > 25000) {
 					n = (f + (f*0.15) + (f*0.20));
-					document.getElementById("n").textContent = n + ",00 é o preço ao consumidor.";
+					document.getElementById("n").textContent = n + ", é o preço ao consumidor.";
 					}			
 }	
